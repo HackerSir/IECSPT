@@ -1,4 +1,4 @@
-# Information Engineering and Computer Science Programming Team
+# IECSPT
 An Website for Programming Team of IECS, FCU.
 
 ## Structure
@@ -19,4 +19,7 @@ An Website for Programming Team of IECS, FCU.
 * PhpStorm
 
 ## Extensions
-* [GitHub Notifier][https://chrome.google.com/webstore/detail/github-notifier/lmjdlojahmbbcodnpecnjnmlddbkjhnn] (for developer)
+* [GitHub Notifier (for developer)][1]
+
+
+[1]: https://chrome.google.com/webstore/detail/github-notifier/lmjdlojahmbbcodnpecnjnmlddbkjhnn
