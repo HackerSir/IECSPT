@@ -12,8 +12,11 @@
 */
 Route::get('/', [
     'as' => 'Home',
-    'uses' => 'HomeController@index'
+    'uses' => 'WelcomeController@index'
 ]);
+
+
+Route::any('staff', 'StaffController@index');
 
 //未定義路由
 Route::get('{all}', array(
@@ -23,8 +26,6 @@ Route::get('{all}', array(
             ->with('global', '不正確的網址');
     }
 ))->where('all', '.*');
-
-Route::any('staff', 'StaffController@index');
 
 //Route::controllers([
 //	'auth' => 'Auth\AuthController',
