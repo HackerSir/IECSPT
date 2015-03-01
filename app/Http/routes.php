@@ -10,12 +10,23 @@
 | and give it the controller to call when that URI is requested.
 |
 */
-
-Route::get('/', 'WelcomeController@index');
-
-Route::get('home', 'HomeController@index');
-
-Route::controllers([
-	'auth' => 'Auth\AuthController',
-	'password' => 'Auth\PasswordController',
+Route::get('/', [
+    'as' => 'Home',
+    'uses' => 'HomeController@index'
 ]);
+
+//未定義路由
+Route::get('{all}', array(
+    'as' => 'not-found',
+    function () {
+        return Redirect::route('Home')
+            ->with('global', '不正確的網址');
+    }
+))->where('all', '.*');
+
+Route::any('staff', 'StaffController@index');
+
+//Route::controllers([
+//	'auth' => 'Auth\AuthController',
+//	'password' => 'Auth\PasswordController',
+//]);
