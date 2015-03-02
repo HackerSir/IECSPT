@@ -7,8 +7,8 @@
             {!! HTML::image('pic/building.jpg','Website is still building......'); !!}
         </div>
         <div class="progress">
-            <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 45%">
-                <span class="sr-only">45% Complete</span>
+            <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100" style="width: 30%">
+                <span class="sr-only">30% Complete</span>
             </div>
         </div>
     </div>
