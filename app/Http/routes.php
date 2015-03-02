@@ -12,7 +12,7 @@
 */
 Route::get('/', [
     'as' => 'Home',
-    'uses' => 'WelcomeController@index'
+    'uses' => 'BuildingController@index'
 ]);
 
 
