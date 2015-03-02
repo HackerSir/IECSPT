@@ -20,7 +20,7 @@
     </head>
     <body>
         {{-- navbar--}}
-        @include('common.navbar')
+        {{--@include('common.navbar')--}}
         <div class="container-fluid">
             {{-- global message --}}
             @if(Session::has('global'))
