@@ -12,9 +12,14 @@
 */
 Route::get('/', [
     'as' => 'Home',
-    'uses' => 'BuildingController@index'
+    function() {
+        return Redirect::to('oldWebsite/index.html');
+    }
 ]);
 
+Route::get('newWebsite', [
+    'uses' => 'BuildingController@index'
+]);
 
 Route::any('staff', 'StaffController@index');
 
