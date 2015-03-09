@@ -1,5 +1,20 @@
 @extends('home')
 
+@section('body_javascript')
+    <script type="text/javascript">
+        $(document).ready(function () {
+            var other_slide_div = $('#other_slide');
+            var toShowDiv = $('#103slides > div[data-showin-index="true"]');
+
+            $('#103slides').empty();
+            toShowDiv.each(function () {
+                $('#103slides').prepend(this);
+            });
+            $('#103slides').append(other_slide_div);
+        });
+    </script>
+@endsection
+
 @section('header')
     <div class="w-clearfix header" id="header">
         <div class="navigation">
@@ -141,8 +156,12 @@
                 <div class="w-col w-col-4 align-right">
                     <h2>簡報下載</h2>
                 </div>
-                <div class="w-col w-col-8" id="103slides">{!! $classList !!}
-                    <div>
+                <div class="w-col w-col-8" id="103slides">
+                    <div id="JS_ERROR">
+                        <h3 class="slidetitle" style="color: red;">Javascript發生錯誤，無法過濾清單<br />稍等一下，按F5重新整理，或是回報錯誤給系程，謝謝</h3>
+                    </div>
+                    {!! $classList !!}
+                    <div id="other_slide">
                         <h3 class="slidetitle">Older Slides：</h3>
                         <p>{!! HTML::linkRoute('Slides', '其他比較舊的簡報可以從這裡進去下載。', NULL, ["target" => "_blank"]) !!}</p>
                     </div>
