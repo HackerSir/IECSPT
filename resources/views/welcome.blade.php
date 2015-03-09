@@ -10,7 +10,7 @@
 @endsection
 
 @section('courseIntroduction')
-    <div class="section green">
+    <div class="section green" id="courseIntroduction">
         <div class="w-container">
             <div class="w-row">
                 <div class="w-col w-col-4 align-right">

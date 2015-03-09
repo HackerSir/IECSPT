@@ -41,8 +41,9 @@
                 </div>
             @endif
             {{-- content --}}
-            @yield('content')
         </div>
+
+        @yield('content')
 
         {{-- Scripts --}}
         {!! HTML::script('//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'); !!}
