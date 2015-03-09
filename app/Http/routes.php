@@ -10,15 +10,16 @@
 | and give it the controller to call when that URI is requested.
 |
 */
-Route::get('/', [
+/*Route::get('/', [
     'as' => 'Home',
     function() {
         return Redirect::to('oldWebsite/index.html');
     }
 ]);
+*/
 
-Route::get('new', [
-    'as' => 'new',
+Route::get('/', [
+    'as' => 'Home',
     'uses' => 'WelcomeController@index'
 ]);
 

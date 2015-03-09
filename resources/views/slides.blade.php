@@ -6,7 +6,7 @@
             <a class="w-inline-block logo-link" href="index.html">
                 <img src="images/SlideLogo.png" alt="541d3dd8e589397129f1d791_SlideLogo.png">
             </a>
-            <strong>{!! HTML::linkRoute('new', '&lt;&lt; 回首頁', NULL, ["class" => "nav-link"]) !!}</strong>
+            <strong>{!! HTML::linkRoute('Home', '&lt;&lt; 回首頁', NULL, ["class" => "nav-link"]) !!}</strong>
         </div>
     </div>
     @foreach($classList as $key => $value)
