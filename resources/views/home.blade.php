@@ -2,6 +2,7 @@
 
 @section('content')
     @yield('header')
+    @yield('courseIntroduction')
     @yield('about')
     @yield('slide')
     @yield('tools')
