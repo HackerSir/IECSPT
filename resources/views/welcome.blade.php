@@ -106,6 +106,11 @@
                         <tr><td>2015 / 06 / 17</td><td>休息(隔天期末考)</td></tr>
                         <tr><td>2015 / 06 / 24</td><td>期末考周(06/18~06/26)</td></tr>
                     </table><br/>
+                    <P style="font-size: 10pt">
+                        UpdateLog:<br />
+                        2015/03/09: 第一次建立
+                    </P>
+                    <br />
                     <h3 class="aboutsectitle">開課緣由</h3>
                     <p>
                         上學期期末有開會，決議教程式設計競賽
