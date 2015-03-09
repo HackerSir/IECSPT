@@ -17,8 +17,8 @@ Route::get('/', [
     }
 ]);
 
-Route::get('newWebsite', [
-    'uses' => 'BuildingController@index'
+Route::get('new', [
+    'uses' => 'WelcomeController@index'
 ]);
 
 Route::any('staff', 'StaffController@index');
