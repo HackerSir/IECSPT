@@ -3,11 +3,9 @@
 @section('header')
     <div class="w-clearfix header" id="header">
         <div class="navigation">
-            <img class="logo" src="images/cooltext1724045004.png" alt="Logo">
+            {!! HTML::image('images/header.png',  'Logo') !!}
         </div>
-        <a class="w-inline-block facebooklink" href="https://www.facebook.com/groups/228847760489062/" target="_blank">
-            <img class="facbooklinklogo" src="images/Facebook.png" width="50" alt="541d39541b9b8d6f29e1bd2a_Facebook.png">
-        </a>
+        {!! html_entity_decode(HTML::link('https://www.facebook.com/groups/228847760489062/', HTML::image('images/Facebook.png', NULL, ["class" => "facbooklinklogo", "width" => "50"]), ["class" => "w-inline-block facebooklink", "target" => "_blank"])) !!}
     </div>
 @endsection
 
@@ -44,7 +42,21 @@
 @endsection
 
 @section('slide')
-    <hr />
+    <div class="section green" id="Slides">
+        <div class="w-container">
+            <div class="w-row">
+                <div class="w-col w-col-4 align-right">
+                    <h2>簡報下載</h2>
+                </div>
+                <div class="w-col w-col-8" id="103slides">{!! $classList !!}
+                    <div>
+                        <h3 class="slidetitle">Older Slides：</h3>
+                        <p>{!! HTML::linkRoute('Slides', '其他比較舊的簡報可以從這裡進去下載。', NULL, ["target" => "_blank"]) !!}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 @endsection
 
 @section('tools')
@@ -176,5 +188,5 @@
 @endsection
 
 @section('footer')
-    <div class="footer">Copyright (c) 2014&nbsp;&nbsp;Vongola | 逢甲大學資訊工程學系程式設計小隊 |&nbsp;Programming Team, IECS, FCU</div>
+    <div class="footer">Copyright (c) 2014 - 2015&nbsp;&nbsp;Vongola | 逢甲大學資訊工程學系程式設計小隊 |&nbsp;Programming Team, IECS, FCU</div>
 @endsection

@@ -47,7 +47,6 @@
         {{-- Scripts --}}
         {!! HTML::script('//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'); !!}
         {!! HTML::script('//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.1/js/bootstrap.min.js'); !!}
-        {!! HTML::script('ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'); !!}
         {!! HTML::script('js/webflow.js'); !!}
         <!--[if lte IE 9]>
         {!! HTML::script('//cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js'); !!}

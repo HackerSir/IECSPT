@@ -18,7 +18,13 @@ Route::get('/', [
 ]);
 
 Route::get('new', [
+    'as' => 'new',
     'uses' => 'WelcomeController@index'
+]);
+
+Route::get('slides', [
+    'as' => 'Slides',
+    'uses' => 'SlideController@index'
 ]);
 
 Route::any('staff', 'StaffController@index');

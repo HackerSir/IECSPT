@@ -1,5 +1,9 @@
 <?php namespace App\Http\Controllers;
 
+use DOMDocument;
+use Illuminate\Support\Facades\File;
+use Yangqi\Htmldom\Htmldom;
+
 class WelcomeController extends Controller {
 
 	/*
@@ -29,7 +33,14 @@ class WelcomeController extends Controller {
 	 */
 	public function index()
 	{
-		return view('welcome');
+        $year = (int)date("Y",time());
+        $month = (int)date("M",time()) ;
+        if($month < 8)
+            $year -= 1;
+        $year -= 1911;
+        $classList = File::get('partials'.DIRECTORY_SEPARATOR.$year.'.html');
+
+        return view('welcome') -> with("classList", $classList);
 	}
 
 }

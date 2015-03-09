@@ -52,7 +52,7 @@ return [
     |
     */
 
-    'locale' => 'en',
+    'locale' => 'zh-tw',
 
     /*
     |--------------------------------------------------------------------------
@@ -146,6 +146,7 @@ return [
         'App\Providers\EventServiceProvider',
         'App\Providers\RouteServiceProvider',
 
+
     ],
 
     /*
@@ -195,7 +196,6 @@ return [
         'View' => 'Illuminate\Support\Facades\View',
         'HTML' => 'Illuminate\Html\HtmlFacade',
         'Form' => 'Illuminate\Html\FormFacade',
-
     ],
 
 ];
