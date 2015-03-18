@@ -24,4 +24,6 @@ out/
 ## Do not try it :)
 _github.php
 
-
+## Resource files
+*.pdf
+*.zip
