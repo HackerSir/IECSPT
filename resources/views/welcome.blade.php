@@ -264,6 +264,10 @@
                 </div>
                 <div class="w-col w-col-8">
                     <a class="w-inline-block entrybox" href="http://uva.onlinejudge.org/index.php" target="_blank">
+                        <h2 class="tooltitle">Google</h2>
+                        <p>Google，BJ4。</p>
+                    </a>
+                    <a class="w-inline-block entrybox" href="http://uva.onlinejudge.org/index.php" target="_blank">
                         <h2 class="tooltitle">Uva Online Judge</h2>
                         <p>歷史悠久的線上評測網站。</p>
                     </a>
