@@ -13,6 +13,9 @@
             $('#103slides').append(other_slide_div);
         });
     </script>
+    @if(App::environment('production'))
+        {!! HTML::script("js/downloadCounter.js"); !!}
+    @endif
 @endsection
 
 @section('header')

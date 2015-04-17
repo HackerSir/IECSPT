@@ -1,5 +1,11 @@
 @extends('app')
 
+@section('body_javascript')
+    @if(App::environment('production'))
+        {!! HTML::script("js/downloadCounter.js"); !!}
+    @endif
+@endsection
+
 @section('content')
     <div class="header sub-page" id="header">
         <div class="navigation">
