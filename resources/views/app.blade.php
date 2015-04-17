@@ -31,6 +31,7 @@
     </head>
     <body>
         @if(App::environment('production'))
+            {{-- 只在 production 環境下，新增 Google Analytics JS code --}}
             <script>
                 (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
                     (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
