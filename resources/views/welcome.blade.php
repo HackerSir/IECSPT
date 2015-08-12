@@ -32,7 +32,7 @@
         <div class="w-container">
             <div class="w-row">
                 <div class="w-col w-col-4 align-right">
-                    <h2>本學期課程</h2>
+                    <h2>103下學期課程</h2>
                 </div>
                 <div class="w-col w-col-8">
                     <h2 class="aboutsectitle">程式設計競賽入門</h2>
