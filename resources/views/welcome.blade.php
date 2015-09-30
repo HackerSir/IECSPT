@@ -29,7 +29,7 @@
 @endsection
 
 @section('courseIntroduction')
-    @include('course_introduction.1032')
+    @include('course_introduction.1041')
 @endsection
 
 @section('about')
