@@ -38,8 +38,7 @@ class WelcomeController extends Controller {
         if($month < 8)
             $year -= 1;
         $year -= 1911;
-        $classList = File::get('partials'.DIRECTORY_SEPARATOR.$year.'.html');
-
+        $classList = File::get('partials' . DIRECTORY_SEPARATOR . $year . '.html');
         return view('welcome') -> with("classList", $classList);
 	}
 
