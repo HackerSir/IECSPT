@@ -4,13 +4,13 @@
     <script type="text/javascript">
         $(document).ready(function () {
             var other_slide_div = $('#other_slide');
-            var toShowDiv = $('#103slides > div[data-showin-index="true"]');
+            var toShowDiv = $('#104slides > div[data-showin-index="true"]');
 
-            $('#103slides').empty();
+            $('#104slides').empty();
             toShowDiv.each(function () {
-                $('#103slides').prepend(this);
+                $('#104slides').prepend(this);
             });
-            $('#103slides').append(other_slide_div);
+            $('#104slides').append(other_slide_div);
         });
     </script>
     @if(App::environment('production'))
@@ -164,7 +164,7 @@
                 <div class="w-col w-col-4 align-right">
                     <h2>簡報下載</h2>
                 </div>
-                <div class="w-col w-col-8" id="103slides">
+                <div class="w-col w-col-8" id="104slides">
                     <div id="JS_ERROR">
                         <h3 class="slidetitle" style="color: red;">Javascript發生錯誤，無法過濾清單<br />稍等一下，按F5重新整理，或是回報錯誤給系程，謝謝</h3>
                     </div>
