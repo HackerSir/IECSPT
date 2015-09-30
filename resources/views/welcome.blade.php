@@ -3,14 +3,15 @@
 @section('body_javascript')
     <script type="text/javascript">
         $(document).ready(function () {
-            var other_slide_div = $('#other_slide');
+            var $other_slide_div = $('#other_slide');
             var toShowDiv = $('#104slides > div[data-showin-index="true"]');
 
-            $('#104slides').empty();
+            var $104slides = $('#104slides');
+            $104slides.empty();
             toShowDiv.each(function () {
-                $('#104slides').prepend(this);
+                $104slides.prepend(this);
             });
-            $('#104slides').append(other_slide_div);
+            $104slides.append($other_slide_div);
         });
     </script>
     @if(App::environment('production'))
