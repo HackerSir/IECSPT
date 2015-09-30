@@ -34,7 +34,7 @@ class WelcomeController extends Controller {
 	public function index()
 	{
         $year = (int)date("Y",time());
-        $month = (int)date("M",time()) ;
+        $month = (int)date("m",time()) ;
         if($month < 8)
             $year -= 1;
         $year -= 1911;
