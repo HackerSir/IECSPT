@@ -16,16 +16,16 @@ class SlideController extends Controller
      */
     public function index()
     {
-        $year = (int)date("Y", time());
-        $month = (int)date("M", time());
-        if ($month < 8)
-            $year -= 1;
-        $year -= 1911;
         $classList = File::allFiles("partials");
-        $classList = array_reverse($classList);
+        rsort($classList);
+
         $yearList = [];
         foreach ($classList as $key => $value) {
-            $yearList[$key] = str_replace('partials' . DIRECTORY_SEPARATOR, '', str_replace('.html', '', $value));
+            //利用斜線區隔
+            $path = explode(DIRECTORY_SEPARATOR, strval($value));
+            //取出 $path 最後一項，使用'.'分割取出第一項
+            $name = explode('.', end($path));
+            $yearList[$key] = $name[0];
         }
 
         return view('slides')->with("classList", $classList)->with("yearList", $yearList);
