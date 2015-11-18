@@ -78,7 +78,7 @@
                     {!! $classList !!}
                     <div id="other_slide">
                         <h3 class="slidetitle">Older Slides：</h3>
-                        <p>{!! HTML::linkRoute('Slides', '其他比較舊的簡報可以從這裡進去下載。', NULL, ["target" => "_blank"]) !!}</p>
+                        <p>{!! HTML::linkRoute('Slides', '其他比較舊的簡報可以從這裡進去下載。', [], ["target" => "_blank"]) !!}</p>
                     </div>
                 </div>
             </div>
