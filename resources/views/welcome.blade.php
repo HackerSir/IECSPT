@@ -57,7 +57,7 @@
                         上課時間：每周三晚上 6:30 – 8:30 &nbsp;(期中考周、期末考周、國定假日除外)
                         <br>上課地點：資電235 (資電館2F)
                     </p>
-                    <br><img src="images/Map.png"></img>
+                    <br><img src="images/Map.png">
                 </div>
             </div>
         </div>
