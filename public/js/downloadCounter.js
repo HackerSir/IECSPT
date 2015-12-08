@@ -3,7 +3,7 @@
  * 檔案下載次數追蹤
  */
 $(document).ready(function () {
-    var divList = ['#103slides', '#102slides'];
+    var divList = ['#104slides', '#103slides', '#102slides'];
     for (var i in divList) {
         //check div exist...
         if ($(divList[i]).length) {
