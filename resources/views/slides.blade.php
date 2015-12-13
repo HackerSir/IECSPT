@@ -2,7 +2,7 @@
 
 @section('body_javascript')
     @if(App::environment('production'))
-        {!! HTML::script("js/downloadCounter.js"); !!}
+        {!! HTML::script("js/downloadCounter.js") !!}
     @endif
 @endsection
 

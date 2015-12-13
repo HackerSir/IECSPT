@@ -4,7 +4,7 @@
 
     <div class="container">
         <div class="row text-center">
-            {!! HTML::image('pic/building.jpg','Website is still building......'); !!}
+            {!! HTML::image('pic/building.jpg','Website is still building......') !!}
             <h2>網頁建置中......</h2>
         </div>
         <div class="progress">
