@@ -1,4 +1,4 @@
-@extends('app')
+@extends('admin')
 
 @php($isEditMode = isset($role))
 @php($methodText = $isEditMode ? '編輯' : '新增')

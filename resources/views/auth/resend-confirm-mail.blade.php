@@ -1,4 +1,4 @@
-@extends('app')
+@extends('admin')
 
 @section('title', '重新發送驗證信件')
 

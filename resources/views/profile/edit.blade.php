@@ -1,4 +1,4 @@
-@extends('app')
+@extends('admin')
 
 @section('title', '編輯個人資料')
 

@@ -1,4 +1,4 @@
-@extends('app')
+@extends('admin')
 
 @section('title', "{$user->name} - 會員資料")
 
