@@ -2,7 +2,6 @@
 
 use App\Permission;
 use App\Role;
-use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
 class CreateLessonManagePermission extends Migration

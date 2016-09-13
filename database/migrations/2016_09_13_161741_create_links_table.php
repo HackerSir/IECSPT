@@ -3,7 +3,7 @@
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 
-class CreateSemestersTable extends Migration
+class CreateLinksTable extends Migration
 {
     /**
      * Run the migrations.
@@ -12,13 +12,12 @@ class CreateSemestersTable extends Migration
      */
     public function up()
     {
-        Schema::create('semesters', function (Blueprint $table) {
+        Schema::create('links', function (Blueprint $table) {
             $table->increments('id');
-            $table->integer('year');
-            $table->integer('semester');
-            $table->string('classroom');
-            $table->timestamp('begin_at');
-            $table->timestamp('end_at');
+            $table->string('title');
+            $table->text('desc');
+            $table->string('url');
+            $table->string('type');
             $table->timestamps();
         });
     }
@@ -30,6 +29,6 @@ class CreateSemestersTable extends Migration
      */
     public function down()
     {
-        Schema::drop('semesters');
+        Schema::drop('links');
     }
 }
