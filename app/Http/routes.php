@@ -12,7 +12,7 @@
 */
 
 //會員（須完成信箱驗證）
-Route::group(['middleware' => ['auth', 'email']], function () {
+Route::group(['middleware' => ['auth', 'email'], 'prefix' => 'admin'], function () {
     //會員管理
     //權限：user.manage、user.view
     Route::resource('user', 'UserController', [
@@ -64,6 +64,4 @@ Route::group(['namespace' => 'Auth'], function () {
 });
 
 //首頁
-Route::get('/', function () {
-    return view('index');
-})->name('index');
+Route::get('/', 'IECSController@getIndex')->name('index');
