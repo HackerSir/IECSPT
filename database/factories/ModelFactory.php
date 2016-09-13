@@ -29,3 +29,13 @@ $factory->define(App\User::class, function (Faker\Generator $faker) {
         'last_login_ip'  => $ip,
     ];
 });
+
+
+$factory->define(App\Link::class, function (Faker\Generator $faker) {
+    return [
+        'title' => $faker->domainWord,
+        'desc'  => $faker->words,
+        'url'   => $faker->url,
+        'type'  => rand(0, 1) == 1 ? "tool" : "link",
+    ];
+});
