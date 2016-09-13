@@ -1,5 +1,5 @@
 <?php
 
 return [
-    'name' => 'LaravelBase',
+    'name' => '逢甲大學資訊工程學系程式設計小隊',
 ];
